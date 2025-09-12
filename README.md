@@ -6,11 +6,14 @@ Sistema de controle de presença com Laravel, Vue.js e Inertia.js.
 
 **Windows:**
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [XAMPP](https://www.apachefriends.org/download.html) (inclui PHP 8.2+ e Composer)
 - [Git](https://git-scm.com/download/win)
 
 **Linux:**
 - [Docker](https://docs.docker.com/engine/install/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
+- [PHP 8.2+](https://www.php.net/downloads.php)
+- [Composer](https://getcomposer.org/download/)
 - [Git](https://git-scm.com/download/linux)
 
 ## 🚀 Instalação
@@ -35,7 +38,14 @@ copy .env.example .env
 cp .env.example .env
 ```
 
+### 3. Instale as dependências
+```bash
+composer install
+```
+
 ## 🎯 Executar o projeto
+
+> **⚠️ Importante para Windows:** É necessário usar o terminal do WSL (Windows Subsystem for Linux) para evitar avisos de sistema não suportado. Você pode abrir o WSL digitando `wsl` no PowerShell ou usar o terminal integrado do VS Code.
 
 **Desenvolvimento:**
 ```bash
@@ -45,6 +55,9 @@ cp .env.example .env
 # Execute o servidor de desenvolvimento
 ./vendor/bin/sail npm run dev
 ```
+
+**Acesse a aplicação:**
+- 🌐 **URL:** http://localhost
 
 ## 🐛 Problemas comuns
 
